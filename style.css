@@ -100,8 +100,11 @@ footer img {
 @media screen and (max-width: 900px) {
    
   .heading {
-    width: 30rem;
+width: 30rem;
     font-size: 3.2rem;
+  }
+  .fas, .fab{
+    display: none;
   }
   main {
     padding: 0.5rem 1.5rem;
@@ -109,10 +112,12 @@ footer img {
   .intro {
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
   }
   .intro-text {
     width: 40rem;
   }
+  
 .horizontal-line{
     display: none;
 }
