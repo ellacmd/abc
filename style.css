@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+h3 {
+  color: rgb(245, 108, 66);
+  font-size: 3rem;
+}
+header {
+  background-color: rgb(51, 62, 80);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem;
+}
+header a {
+  color: white;
+  font-size: 2rem;
+}
+.heading {
+  font-size: 5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 47rem;
+}
+.heading-text-primary {
+  color: rgb(245, 108, 66);
+}
+.heading-text-secondary {
+  color: white;
+}
+main {
+  padding: 3rem 20rem;
+}
+.intro {
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-between;
+}
+.intro-text {
+  width: 50rem;
+}
+.intro-img img {
+  border: 1px solid black;
+  border-radius: 50%;
+  max-width: 100%;
+  height: 10rem;
+  width: 10rem;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 0.05rem;
+  background-color: black;
+}
+.qualifications {
+  display: flex;
+  padding-top: 3rem;
+  font-size: 2rem;
+}
+.box,
+.education,
+.skills,
+.hobbies {
+  padding-top: 1.5rem;
+}
+.date,
+.school {
+  color: grey;
+}
+.container {
+  padding-left: 5rem;
+}
+footer {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+footer img {
+  margin: 1rem;
+    max-width: 100%;
+    height: auto;
+    width: 10rem;
+  
+}
+.fas,
+.fab {
+  margin: 1rem;
+}
+@media screen and (max-width: 900px) {
+   
+  .heading {
+    width: 30rem;
+    font-size: 3.2rem;
+  }
+  main {
+    padding: 0.5rem 1.5rem;
+  }
+  .intro {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .intro-text {
+    width: 40rem;
+  }
+.horizontal-line{
+    display: none;
+}
+  .qualifications {
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+    margin: 0 auto;
+  }
+  
+  .container {
+    padding-left: 0;
+    width: 40rem;
+  }
+  footer{
+      font-size: 1rem;
+  }
+  footer img{
+  width: 5rem;
+  }
+}
