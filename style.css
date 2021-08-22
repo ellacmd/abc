@@ -33,12 +33,23 @@ header a {
 }
 .heading-text-primary {
   color: rgb(245, 108, 66);
+  animation: slideInLeft 0.8s ease-out;
 }
 .heading-text-secondary {
   color: white;
+  animation: slideInRight 0.8s ease-out;
 }
 main {
   padding: 3rem 20rem;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  animation: slideUp .5s .8s ease-out backwards;
+}
+.contact a:hover{
+color:rgb(245, 108, 66);
 }
 .intro {
   display: flex;
@@ -109,6 +120,9 @@ width: 30rem;
   main {
     padding: 0.5rem 1.5rem;
   }
+  .contact a:hover{
+    color: white;
+  }
   .intro {
     flex-direction: column-reverse;
     align-items: center;
@@ -138,4 +152,39 @@ width: 30rem;
   footer img{
   width: 8rem;
   }
+}
+/* Animations */
+@keyframes slideInLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  
+  100%{
+    opacity: 1;
+    transform:translateX(0)
+  }
+  
+}
+@keyframes slideInRight {
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100%{
+    opacity: 1;
+    transform:translateX(0)
+  }
+  
+}
+@keyframes slideUp {
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform:translateX(0)
+  }
+  
 }
